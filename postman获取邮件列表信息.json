@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "7738c4f5-251f-46a4-8042-1a760f19e44a",
+		"name": "临时 copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "获取收件箱邮件列表",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": " X-BackEndCookie=S-1-5-21-1713849901-2797640346-4150151575-1009910=u56Lnp2ejJqBzsubzJvLycbSy87Nz9LLmsbL0sfHmpzSzZ7NncebmpzGzMrMgYHNz87G0s7N0s/Hq8/OxcvNxczL; lang=zh-CN; ValiCode=4VC3SUFFYGF5; umail.jd.com=cb43089295b786f1781d9fc614eb7aa670b0dfb5; amail.jd.com=zhangshengfan; cadata=ZDywRRhSlKVHqfYbnImNQFTJYt1tyZb379jp1cThO1X02rdZa0Xa+Vun+DHaBMbEj3qTCe+3xENiahMj0oxDTMsAjf1Q6pWu5j2DBBJf5TkZFu1xQNWY3zrXEAq+fpkH; cadataTTL=SBsAOMEHJ+i2u91e2HYmVA==; cadataKey=EdQDcnfHsUR/2GrgwSL/E/Xfldow68dOJgnkJ8KjLsiWrqTTDTXHmv7vG+mobLm3t/Q5VEar72y1VePQlvVqh+UfGgbrE0wqVX0eNtYIIG2y/GthMNU7yVlvKc2ANzQZJ0YBzdp2P8ITYB/YGRzkMdufKx6XXeKUT1bFaxoOrgDyqaC3uHpBnBwiz5RgFC95t2uhbbp8AobzrgsbqE6tcHWfIhTyHdysUsZXu91RXpGYLWPbNkZ9BnF8uM0YuJkmW+O7vpvVEkbGnn9OKgfYewFjTOeh+u1UIPJoCeunFKd3DhaelGxaLyjqAt24zrBZXuXrbGbtdC+KPfUszoX8FA==; cadataIV=nUw9yEOgyf9AjH6XJLVs7mKkTPlEHJ4NMdwd8fpnS2jwCoBqRDy5qVFEhmflwvkNK6vUr6Bk2TK/GO6CrBgB5KMfqec8klOyWjQIMOrpBakWYr5kssqupGIyjpUG/WvxZikQQuPrPIQcO+LB/6L3k2Hd42tyTEkGzPPZmWdUlQXsO+MzKzHY2uJEGkKqkrjhAU9H/ks3NdnRyo1ED2SG3nuwA/uunzPPBDc0fur+hob4JO7BKeSfZL4BAgZ+9lrGMHifW0k+Gxihi7Rku5vAHDAO90Lg37kLklUaj4GpzoPSY4e7/90g6SlWfDepkzxpk0xS1nlvJNa2GvERqtN6Yg==; cadataSig=IlFqGMhuHVvgSPoaM9AreZ9kq1Ahb8c6QFs0RdoViZP14mp0xKGt8mOedbXaA1of1A7f4WAhx/7aQVYEPKMirB1ICUHoKH2eUm9+i1m5ivkXiRky+K1zEPsN9bRrGr/1Az31PVKkxmvhTI+rds5UxtyE/8q9958nnCwh0aVDGFQTEZfp4gFwEJeMdoMuKzUNQzqDV+vV5wWxIBfWjfIpwjvvReOKDN+Cf3UTTV0m9j/PMyuWGyhb5wBUsWEi4ezI6+sHMLuctTVTUdta6YN6He55kH8dZM3jP3Abor6B/ktFYvqaq1eBjtJ6adLpKF9ls7Lgu9v1I804Pod5IhOJlg==; ClientId=170A97F54443483F884DAF775F53797A; UC=f54e1fbf65ce40f8a6b75722bd5b62cb; RoutingKeyCookie=v2:%2fV1xBTCDLP7eJXStxne5F48i2Y5XrC1%2fglQ5zDPnTSQ%3d:d89b6794-bf46-480f-bcf3-4fe09974a4b1@jd.com; X-OWA-CANARY=vu3lgm0cxUGDtX5aROk-OYB2Q-3sY9cI_oXIkdiSD2P87ehJN9nwd2tAeGHgimHuTtNnWKFLktY.",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://mail.jd.com/owa/sessiondata.ashx",
+					"protocol": "https",
+					"host": [
+						"mail",
+						"jd",
+						"com"
+					],
+					"path": [
+						"owa",
+						"sessiondata.ashx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "分页查询",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Action",
+						"value": " FindItem",
+						"type": "text"
+					},
+					{
+						"key": "client-request-id",
+						"value": " A84FA33F1BDC45AD95097F44E4AA1CB9_157319418496262",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json; charset=UTF-8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Cookie",
+						"value": "X-BackEndCookie=S-1-5-21-1713849901-2797640346-4150151575-1009910=u56Lnp2ejJqBzsubzJvLycbSy87Nz9LLmsbL0sfHmpzSzZ7NncebmpzGzMrMgYHNz87G0s7N0s/Hq8/Jxc3Nxc/H; __jdu=1571023082727881273581; pinId=2Bnp1DylQwi5X78E99k3fw; pin=zhangvalue; unick=zhangvalue; _tp=cOR1hNRYc3ccyW4KIJwFQQ%3D%3D; _pst=zhangvalue; user-key=c52f8d0d-498d-4685-9f32-7dee107dc2d4; cn=16; shshshfpa=b77ba96a-37d4-9aed-2808-8f342d4876af-1571026704; ClientId=A84FA33F1BDC45AD95097F44E4AA1CB9; X-OWA-JS-PSD=1; areaId=1; RoutingKeyCookie=v2:%2fV1xBTCDLP7eJXStxne5F48i2Y5XrC1%2fglQ5zDPnTSQ%3d:d89b6794-bf46-480f-bcf3-4fe09974a4b1@jd.com; lang=zh-CN; umail.jd.com=cb43089295b786f1781d9fc614eb7aa670b0dfb5; amail.jd.com=zhangshengfan; AppcacheVer=15.1.1415.2:zh-cnbase; ASP.NET_SessionId=821972ca-bb86-4a2a-8943-dcc79bce08ca; TimeOffset=-480; unpl=V2_ZzNtbUdTQEZ2W05WexFZDGILRwhKXhMQc19DAHsRXw1mBEJYclRCFX0URlRnGFgUZwEZX0RcQRxFCEdkeB5fA2AFEFlBZxpFK0oYEDlNDEY1WnxZRldAFXEIQlF6KWwGZzMSXHJXRxN1CUVWehBfA2QFG1RCVEUXcQFGZEsebDVXBBtfRVZLJXQ4R2Q5TQAFZQoUXkEaQxFzCEdXeRhVBmEAFFRLV0ATdwxPVEsYbAY%3d; __jdv=76161171|haosou-search|t_262767352_haosousearch|cpc|5512151540_0_452b2b93194849dd98a47f4e192906a4|1572932258714; shshshfpb=hK9LDqjkpSdZgURqoxXh1BA%3D%3D; 3AB9D23F7A4B3C9B=JZTUZRJV76NL6RWD6IMD2ULQP7WOUEYQ6FF4TIGNXZ2H7USWHQM6CBLV6MHV44GBEQXLJXPDMUQINRMNQZLBHHFDWM; ipLoc-djd=1-2809-51216-0; wlfstk_smdl=kz74wvntcfts60d7dg32z629mxsadq9y; TrackID=1nDRau2MeyWhemIqFXhYVrMilvDeaW_L9GTWtInP3XkUb_pHlROI3gqDILHRvmKnGNWOChdplj7rribkHaGLfbJg5jqHxWzJJJgQFiXmsI1A; ceshi3.com=201; shshshfp=7ed8f0db0856eef442ab47b94359bfad; __jda=258904465.1571023082727881273581.1571023083.1572932259.1573182677.10; __jdc=258904465; jd.erp.lang=zh_CN; erp1.jd.com=B002BA76FDD9A6C6CCAEE83E88AD91ACD309CE4CB91249F7BC19E07D3A9842E0BB26291B0C458C38E4A54BA4C0C12B723D9B496C55A7E865098A3496498ABF99CA41DD4C8EEDEA140D13C484D049B6D590F8D68137E59E232816054395E95D20; sso.jd.com=BJ.4beba401a69742b1b6153d7a7c692f57; ValiCode=7ETQK561A5Z2; cadata=2PQlT48Qli/TVIEnmyBIzAyuWEpI0FiBrnd+FS8VrqZbV22CIkw4Azvi1l8o048tu5DWstmGCNQZ9VoptbtAaGrV6Ul7flD2G4SwjCXtVcSmTWRjGRYz3vbTo4bhFF7y; cadataTTL=6Ozbv5NG3pkiSg9uIkLuGg==; cadataKey=YFGhyJ/Bgxjy6KTRTrvVAe0jXPdqyBEzYwAHrGj7Nl5M/PMqLA04j4406ToOFfo/gCmMrD7ZG3TO9gVcfOjAxgwuMa8jI9HH4a8fppyVG7sCIs7VFAtz0bFiAUI3SdRP3AIu474K6QLEeuT/HvqZBeDyvjoYZ6wwnb+0fSGk8ngqXexUcfM/bb8Ra+Yi4M9/vdfnGig1QOrtXHhkTE4EqpkMR9hCy+b00fcbBQVqFKU1BiWueVBUBWVQnSqPUjXZ4jhoGtQNpfI5mz1X7H1qJgOoeGEQvXBFdvHeDnRbukqpyrgmrDG0HuUed69TM4D+KJ1OhAlulbUmRKjM8Zw8Lw==; cadataIV=RoHgh/Dil44f8B5+9twC4Tzqnis6es9SNnkkkzm+xcg+bpHIr8j/1GAeyGPURkgfB3zv4iUXD4ikJGDY0NT2rKjbijzIHaFt7fo2Ndsgs0bAd09SDTlSwtT81s49YbONFedZnNwIRvhsehW52K6aFhoAF6B4HJk3NR/NVAMrg8yHS7/Nx/B0H+ps0Oxd5T1CAKNPgb0DDeohbVXKcameP6tGysFRH46KDr3z+0o0Ukt78xtZ6kEfasv6Ftn+wvDuZbh+CN9sPvZbF0w2pe9gaHann0QaJxpyEb0jvc0DGfgMXH/H9WBlsoYe6iEd/o4FUFkLMBX3qTd1qHKwen60jQ==; cadataSig=qugKsQeAAfmAG2mRxR+g6pxF/vse1/NlZDBggIn5PhzpRf3HLPc21SIQMgF3eS+ZJc1kJtXx0cfdNCOrjcMmLQpbS1qorV0qxJzt1ATakiGVnJXwKrgHdaRvSHER3STaatnsX1R9+rTJlpsI0NJPGnQv22N2ghZUe+NFsycuRv7GW2JTG16B5/Wutn0sO1dEJ4oCOJtAFseLUMv/WbYRCVhwnVczXsUaTVrIECmSopcqUEpmKLi8cRjJSP2Nbr5e+ky0oQnYbIrU1JmCxg2dssZJruodZcP1zpAT2R9EGQyxKDGDkUH95m4Q5gzNo3kw30BtCQbDjkRU0P+cBpalgg==; UC=e195b3145e564a1a82e1b4e9253b9cbc; X-OWA-CANARY=QLaxMejabkqcBcJY1uOEKxA4w_sTZNcIQbgiCc5pqgIvORl3zSvsfZYPqYVe9HgRI0oc23KgTVU.",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": " mail.jd.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Origin",
+						"value": " https://mail.jd.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Pragma",
+						"value": " no-cache",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "User-Agent",
+						"value": " Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-OWA-ActionId",
+						"value": " -49",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-OWA-ActionName",
+						"value": " Browse_All",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-OWA-Attempt",
+						"value": " 1",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-OWA-CANARY",
+						"value": "QLaxMejabkqcBcJY1uOEKxA4w_sTZNcIQbgiCc5pqgIvORl3zSvsfZYPqYVe9HgRI0oc23KgTVU.",
+						"type": "text"
+					},
+					{
+						"key": "X-OWA-ClientBegin",
+						"value": " 2019-11-08T01:56:12.843",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-OWA-ClientBuildVersion",
+						"value": " 15.1.1415.2",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-OWA-CorrelationId",
+						"value": " A84FA33F1BDC45AD95097F44E4AA1CB9_157319418496262",
+						"type": "text"
+					},
+					{
+						"key": "X-OWA-UrlPostData",
+						"value": "%7B%22__type%22%3A%22FindItemJsonRequest%3A%23Exchange%22%2C%22Header%22%3A%7B%22__type%22%3A%22JsonRequestHeaders%3A%23Exchange%22%2C%22RequestServerVersion%22%3A%22Exchange2016%22%2C%22TimeZoneContext%22%3A%7B%22__type%22%3A%22TimeZoneContext%3A%23Exchange%22%2C%22TimeZoneDefinition%22%3A%7B%22__type%22%3A%22TimeZoneDefinitionType%3A%23Exchange%22%2C%22Id%22%3A%22China%20Standard%20Time%22%7D%7D%7D%2C%22Body%22%3A%7B%22__type%22%3A%22FindItemRequest%3A%23Exchange%22%2C%22ItemShape%22%3A%7B%22__type%22%3A%22ItemResponseShape%3A%23Exchange%22%2C%22BaseShape%22%3A%22IdOnly%22%7D%2C%22ParentFolderIds%22%3A%5B%7B%22__type%22%3A%22DistinguishedFolderId%3A%23Exchange%22%2C%22Id%22%3A%22inbox%22%7D%5D%2C%22Traversal%22%3A%22Shallow%22%2C%22Paging%22%3A%7B%22__type%22%3A%22SeekToConditionPageView%3A%23Exchange%22%2C%22BasePoint%22%3A%22Beginning%22%2C%22Condition%22%3A%7B%22__type%22%3A%22RestrictionType%3A%23Exchange%22%2C%22Item%22%3A%7B%22__type%22%3A%22IsEqualTo%3A%23Exchange%22%2C%22Item%22%3A%7B%22__type%22%3A%22PropertyUri%3A%23Exchange%22%2C%22FieldURI%22%3A%22InstanceKey%22%7D%2C%22FieldURIOrConstant%22%3A%7B%22__type%22%3A%22FieldURIOrConstantType%3A%23Exchange%22%2C%22Item%22%3A%7B%22__type%22%3A%22Constant%3A%23Exchange%22%2C%22Value%22%3A%22AQAAAAAAAQwBAAAAB6mSpgAAAAA%3D%22%7D%7D%7D%7D%2C%22MaxEntriesReturned%22%3A14%7D%2C%22ViewFilter%22%3A%22All%22%2C%22IsWarmUpSearch%22%3Afalse%2C%22FocusedViewFilter%22%3A-1%2C%22Grouping%22%3Anull%2C%22ShapeName%22%3A%22MailListItem%22%2C%22SortOrder%22%3A%5B%7B%22__type%22%3A%22SortResults%3A%23Exchange%22%2C%22Order%22%3A%22Descending%22%2C%22Path%22%3A%7B%22__type%22%3A%22PropertyUri%3A%23Exchange%22%2C%22FieldURI%22%3A%22ReceivedOrRenewTime%22%7D%7D%2C%7B%22__type%22%3A%22SortResults%3A%23Exchange%22%2C%22Order%22%3A%22Descending%22%2C%22Path%22%3A%7B%22__type%22%3A%22PropertyUri%3A%23Exchange%22%2C%22FieldURI%22%3A%22DateTimeReceived%22%7D%7D%5D%7D%7D",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": " XMLHttpRequest",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://mail.jd.com/owa/service.svc?action=FindItem",
+					"protocol": "https",
+					"host": [
+						"mail",
+						"jd",
+						"com"
+					],
+					"path": [
+						"owa",
+						"service.svc"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "FindItem"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": []
+}
